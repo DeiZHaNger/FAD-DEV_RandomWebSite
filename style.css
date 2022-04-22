@@ -1,3 +1,95 @@
+body {
+    background: radial-gradient(ellipse at top center, #CCDAE0, #EDF2F4);
+    min-height: 98vh;    
+}
+
+/* ~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~ */
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 6px 12px;
+}
+
+a {
+    color: #D90429;
+}
+
+/* Note - a:visited doit ici être avant a:hover pr que ce dernier s'applique aussi au survol des liens déjà visités */
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: #2B2D42;
+}
+
+/* ~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~ */
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #EF233C;
+}
+
+/* ~~~~~~~~~~~~~~~~ SECTIONS ~~~~~~~~~~~~~~~~ */
+
+    /* -~---~---~---~-- article --~---~---~---~- */
+
+article {
+    border: 1px black solid;
+    margin: auto auto 12px;
+    padding: 0px 24px 12px;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    border: 2px #8D99AE solid;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: underline dashed;
+    color: #2B2D42;
+}
+
+    /* -~---~---~---~-- form --~---~---~---~- */
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2B2D42;
+}  
+
 label[for="comment"] {
     display: block;
+}
+
+span {
+    color: red;
+}
+
+input:invalid:focus {
+    background-color: rgb(255, 205, 205);
+}
+
+input:valid ~ span {
+    display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~ */
+
+footer {
+    text-align: right;
 }

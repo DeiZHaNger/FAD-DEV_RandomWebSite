@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="./index.html" title="to homepage">Home</a></li>
-                    <li><a href="#" title="to blog">Blog</a></li>
+                    <li><a href="./index.html#blog_anchor" title="to blog">Blog</a></li>
                     <li><a href="./gallery.html" title="to gallery page">Gallery</a></li>
                     <li><a href="./contact.html" title="to contact page">Contact</a></li>
                 </ul>
@@ -28,11 +28,13 @@
                     <legend>Let us know how sick you are !</legend>
                     <div>
                         <label for="username">Name</label>
-                        <input type="text" name="username" id="username" minlength="2" maxlength="20" placeholder="ForrestGump">
+                        <input type="text" name="username" id="username" minlength="2" maxlength="20" placeholder="ForrestGump" required>
+                        <span>*</span>
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="forrestgump@fake.com">
+                        <input type="email" name="email" id="email" placeholder="forrestgump@fake.com" required>
+                        <span>*</span>
                     </div>
                     <div>
                         <label for="comment">Comment</label>
