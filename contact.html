@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./style.css">
+        <title>Random Site Contact</title>
+    </head>
+    <body>
+        <header>
+            <img src="https://picsum.photos/800/200" alt="Random Banner">
+            <h1>Welcome home, Sanitarium !</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" title="to homepage">Home</a></li>
+                    <li><a href="#" title="to blog">Blog</a></li>
+                    <li><a href="./gallery.html" title="to gallery page">Gallery</a></li>
+                    <li><a href="./contact.html" title="to contact page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend>Let us know how sick you are !</legend>
+                    <div>
+                        <label for="username">Name</label>
+                        <input type="text" name="username" id="username" minlength="2" maxlength="20" placeholder="ForrestGump">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="forrestgump@fake.com">
+                    </div>
+                    <div>
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" cols="70" rows="10" placeholder="Write a comment..."></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="send_copy" id="send_copy" checked>
+                        <label for="send_copy">Send a copy by email</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Envoyer">
+                        <input type="reset" value="Effacer">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="/">Terms of Use</a></li>
+                <li><a href="/">Cookie Policy</a></li>
+                <li><a href="/">Manage Privacy Preferences</a></li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
