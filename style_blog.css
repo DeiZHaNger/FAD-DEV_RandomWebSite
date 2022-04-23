@@ -31,19 +31,12 @@ main {
     justify-content: space-between;
 }
 
-.blog_main p {
+.blog_main p, .blog img {
     margin: auto;
 }
 
 .blog h3 {
     margin: 0;
-}
-
-.blog img {
-    margin: auto;
-}
-
-.blog h3 {
     font-size: 1.6em;
 }
 
