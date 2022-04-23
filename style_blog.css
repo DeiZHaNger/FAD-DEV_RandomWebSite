@@ -1,0 +1,138 @@
+/* ~~~~~~~~~~~~~~~~ BLOG ~~~~~~~~~~~~~~~~ */
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: auto;
+}
+
+    /* -~---~---~---~-- articles section --~---~---~---~- */
+
+.blog {
+    max-width: unset;
+    margin: unset;
+}
+
+.blog_main article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 8px;
+}
+
+.blog_main div {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blog_main p {
+    margin: auto;
+}
+
+.blog h3 {
+    margin: 0;
+}
+
+.blog img {
+    margin: auto;
+}
+
+.blog h3 {
+    font-size: 1.6em;
+}
+
+.blog span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+    color: #50536e;
+}
+
+    /* -~---~---~---~-- aside section --~---~---~---~- */
+
+.aside_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    max-width: 200px;
+    margin: 0 8px;
+}
+
+.aside_block {
+    background-color: #808a9b3F;
+    border: 1px #2B2D428F solid;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#todays_fact {
+    background-color: #2B2D42;
+    border: 1px #808a9b3F solid;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #EF233C66;
+}
+
+#search_bar {
+    width: 100%;
+}
+
+.search_button {
+    font-size: 1em;
+    margin-top: 4px;
+    background-color: #50536e;
+    text-shadow: 1px 1px 1px #2B2D42;
+}
+
+.search_button:active {
+    background-color: #2B2D42;
+    text-shadow: 1px 1px 1px #808a9b;
+}
+
+h4{
+    margin: auto;
+}
+
+    /* -~---~---~---~-- responsive --~---~---~---~- */
+
+@media screen and (max-width: 860px) {
+    main {
+        flex-wrap: wrap-reverse;
+    }
+
+    .blog h3 {
+        font-size: 1.3em;
+    }
+
+    .aside_section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: unset;
+        margin: 12px 0;
+    }
+
+    .search_block {
+        width: 100%;
+        text-align: center;
+    }
+
+    #search_bar {
+        max-width: 50%;
+    }
+
+    .aside_block {
+        flex-grow: 1;
+        max-width: 48%;
+    }
+
+    .aside_block li {
+        display: block;
+    }
+}

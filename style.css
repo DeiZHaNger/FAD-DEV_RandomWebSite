@@ -8,6 +8,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 li {
@@ -57,29 +58,31 @@ section {
     text-align: center;
 }
 
-h2 {
+/* h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.8em;
     font-weight: normal;
     color: #2B2D42;
     text-shadow: -1px -3px 2px #2B2D4266;
-}
+} */
 
     /* -~---~---~---~-- article --~---~---~---~- */
 
 article {
-    background-color: #EF233C0F;
-    border: 1px #2B2D42 solid;
     margin: auto auto 12px;
     padding: 0px 24px 12px;
+    background-color: #EF233C0F;
+    border: 1px #2B2D42 solid;
+    border-radius: 8px;
 }
 
 article img {
     display: block;
     margin: auto;
-    border: 2px #808a9b solid;
     max-width: 97.8%;
     height: auto;
+    border: 2px #808a9bcc solid;
+    border-radius: 6px;
 }
 
 h3 {
@@ -158,6 +161,7 @@ form {
 fieldset {
     background-color: #EF233C0F;
     border: 1px solid #2B2D42;
+    border-radius: 8px;
 }
 
 form div {
@@ -169,8 +173,9 @@ legend {
     font-size: 1.2em;
     font-weight: bold;
     color: whitesmoke;
-    padding: 4px 8px;
+    padding: 4px 8px 6px;
     text-shadow: 1px 1px 1px gray;
+    border-radius: 6px;
 }
 
 label {
@@ -215,7 +220,7 @@ input:checked {
     cursor: pointer;
     margin-right: 4px;
     padding: 3px 6px 4px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: inherit;
     font-size: 1.1em;
     font-weight: bold;
     color: whitesmoke;
@@ -223,7 +228,7 @@ input:checked {
     border-radius: 4px;
 }
 
-/* Note - button:hover doit ici être avant button:active pr que certains changements de ce dernier (background-color ici) s'appliquent */
+/* Note - form_button:hover doit ici être avant send/reset_button:active pr que certains changements de ce dernier (background-color ici) s'appliquent */
 .form_button:hover {
     background-color: #50536e;
 }
@@ -243,6 +248,6 @@ input:checked {
 
 footer {
     max-width: 800px;
-    margin: auto;
+    margin: 36px auto auto;
     text-align: right;
 }
