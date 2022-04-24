@@ -31,19 +31,12 @@ main {
     justify-content: space-between;
 }
 
-.blog_main p {
+.blog_main p, .blog img {
     margin: auto;
 }
 
 .blog h3 {
     margin: 0;
-}
-
-.blog img {
-    margin: auto;
-}
-
-.blog h3 {
     font-size: 1.6em;
 }
 
@@ -115,6 +108,7 @@ h4{
         flex-wrap: wrap;
         justify-content: space-around;
         max-width: unset;
+        gap: 2%;
         margin: 12px 0;
     }
 
@@ -129,7 +123,8 @@ h4{
 
     .aside_block {
         flex-grow: 1;
-        max-width: 48%;
+        max-width: 46%;
+        margin: 8px auto;
     }
 
     .aside_block li {
