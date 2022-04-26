@@ -142,10 +142,6 @@ h3 {
     left: 44px;
 }
 
-.carousel img, .carousel h3 {
-    cursor: url("../assets/stop_cursor.png"), auto;
-}
-
     /* -~---~---~---~-- form --~---~---~---~- */
     
 form {
